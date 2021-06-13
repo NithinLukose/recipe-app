@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height:100vh;
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container{
+    width:400px;
+    background-color: white;
+    box-shadow: 1px 11px 15px -1px rgba(79,81,79,0.69);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+header{
+    background-color: white;
+    text-align: center;
+}
+
+header h1{
+    font-size: 1.5rem;
+}
+
+.cat-container{
+    display:flex;
+    align-items: center;
+    background-color: #b8c6db;
+background-image: linear-gradient(315deg, #f1f3f5 0%, #eeeef0 84%);
+    overflow: auto;
+}
+
+.cat-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.category{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0.5rem;
+}
+
+.category-img{
+    width: 70px;
+    height:70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    padding: 0.3rem;
+    box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.75);
+}
+
+.category-name{
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+
+.random-meal{
+    padding: 1.5rem;
+    position: relative;
+}
+
+.meal{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 5px 12px -3px rgba(0,0,0,0.75);
+    position: relative;
+}
+
+.meal:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.meal-img{
+    height:250px;
+    width:100%;
+    object-fit: conatin;
+}
+
+.meal-tag{
+    position: absolute;
+    top:10px;
+    left:5px;
+    background-color: white;
+    color:black;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.meal-details{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.meal-name{
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.ingredients-container,.instructions-container{
+    box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.75);
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.ingredients-header,.instructions-header{
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgb(199, 197, 197);
+    padding: 0.3rem;
+}
+
+.ingredients{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ingredient{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0.5rem;
+    
+}
+
+.ingredient-img{
+    width: 70px;
+    height:70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    padding: 0.3rem;
+    box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.75);
+}
+
+.ingredient-name{
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.instructions{
+    padding: 1rem;
+}
+
+.name{
+    margin: 0.5rem;
+    margin-bottom: -0.7rem;
+    font-size: 1rem;
+}
+
+.pagination{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.prev-btn,.next-btn{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.next-btn{
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+
+.prev-btn{
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+}
+
+.next-btn:disabled,.prev-btn:disabled{
+    background-color: rgb(177, 173, 173);
+    background-image:none;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px
+}
+
+.scrollToTopBtn {
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all .5s ease
+}
+  
+.showBtn {
+    opacity: 1;
+    transform: translateY(0)
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='./style.css'>
+    <script src='./scripts.js/requests.js' defer></script>
+    <script src='./scripts.js/details.js' defer></script>
+    <script src='./scripts.js/category.js' defer></script>
+    <title>Recipe</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recipe</h1>
+        </header>
+        <div class='cat-container'>
+            <div class='category' id='chicken'>
+                <img 
+                    id='chicken'
+                    class='category-img'
+                    src='https://www.themealdb.com/images/ingredients/Chicken.png'
+                > 
+                <span class='category-name'>Chicken</span>
+            </div>
+            <div class='category' id='lamb'>
+                <img 
+                    class='category-img'
+                    id='lamb'
+                    src='https://www.themealdb.com/images/ingredients/Lamb.png'
+                > 
+                <span class='category-name'>Lamb</span>
+            </div>
+            <div class='category' id='dessert'>
+                <img 
+                    class='category-img'
+                    id='dessert'
+                    src='https://www.themealdb.com/images/ingredients/ice-cream.png'
+                > 
+                <span class='category-name'>Dessert</span>
+            </div>
+            <div class='category' id='vegetarian'>
+                <img 
+                    class='category-img'
+                    id='vegetarian'
+                    src='https://www.themealdb.com/images/ingredients/cabbage.png'
+                > 
+                <span class='category-name'>vegetarian</span>
+            </div>
+            <div class='category' id='seafood'>
+                <img 
+                    class='category-img'
+                    id='seafood'
+                    src='https://www.themealdb.com/images/ingredients/fish.png'
+                > 
+                <span class='category-name'>Sea food</span>
+            </div>
+            
+        </div>
+        <div class='random-meal'>
+            <div class='meal'>
+                <img
+                    class='meal-img'
+                    src=''
+                    alt="food"
+                >
+                <div class='meal-tag'>
+                    <span class='meal-tag-name'></span>
+                </div>
+                <div class='meal-details'>
+                    <span class='meal-name'></span>
+                </div>                
+            </div>
+            <div class="ingredients-container">
+                <h1 class='ingredients-header'>Ingredients</h1>
+                <div class='ingredients'>                    
+                </div>
+            </div>
+            <div class='instructions-container'>
+                <h1 class='instructions-header'>Recipe</h1>
+                <p class='instructions'></p>
+            </div>
+        </div>
+        <button class='scrollToTopBtn'>
+            <i class="material-icons">
+                expand_less
+            </i>
+        </button>
+    </div>
+    <footer></footer>
+</body>
+</html>
